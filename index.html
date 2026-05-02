@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan S — Developer, Creator, Innovator</title>
+    <meta name="description"
+        content="Alan S — Full-Stack Developer, AI Engineer, and Creative Photographer based in Coimbatore, India.">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar-hero.css">
+    <link rel="stylesheet" href="css/sections-1.css">
+    <link rel="stylesheet" href="css/sections-2.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <img src="assets/logo.png" alt="Alan S" class="preloader-logo">
+        <div class="preloader-bar-wrap">
+            <div class="preloader-bar" id="preloaderBar"></div>
+        </div>
+        <div class="preloader-text">Loading</div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo"><img src="assets/logo.png" alt="Alan S"></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#stills">Alan Stills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <div class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="bg-glow bg-glow--blue" style="top:-10%;left:-5%;"></div>
+        <div class="bg-glow bg-glow--purple" style="bottom:10%;right:10%;"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <div class="hero-greeting"><span class="line"></span>Hello, I'm</div>
+                <h1 class="hero-name"><span class="first">Alan </span><span class="last">S</span></h1>
+                <div class="hero-roles"><span id="typedText"></span><span class="typed-cursor">|</span></div>
+                <p class="hero-desc">I don't just build things — I engineer experiences. From scalable web platforms to
+                    AI-powered inspection systems, I turn complex problems into elegant solutions. When I'm not coding,
+                    I'm behind the lens capturing stories.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-outline">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-num" data-count="25">0</div>
+                        <div class="hero-stat-label">Projects Built</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num" data-count="10">0</div>
+                        <div class="hero-stat-label">Years in Photography</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num" data-count="5">0</div>
+                        <div class="hero-stat-label">Leadership Roles</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+            <div class="hero-dot"></div>
+            <div class="hero-dot"></div>
+            <div class="hero-dot"></div>
+        </div>
+        <div class="hero-scroll"><span>Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+        <div class="bg-glow bg-glow--blue" style="top:20%;right:-10%;"></div>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-image-wrapper">
+                        <img src="assets/alan1.png" alt="Alan S" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="about-exp-badge">
+                        <div class="num">3+</div>
+                        <div class="label">Years in Tech</div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">Crafting <span class="gradient-text">Digital Futures</span></h2>
+                    <p class="bio">I'm a Computer Science Engineering student at Sri Ramakrishna Institute of
+                        Technology, specializing in Cloud Computing. With a CGPA of 8.995, I balance academics with a
+                        relentless passion for building — whether it's AI-driven quality inspection systems, full-stack
+                        web platforms, or award-winning hackathon solutions. Co-founder of Alan Stills, a photography
+                        brand I've been running for over 10 years. I believe the best work happens at the intersection
+                        of technology, creativity, and purpose.</p>
+                    <div class="about-tags">
+                        <span class="about-tag">Full-Stack Dev</span>
+                        <span class="about-tag">Computer Vision</span>
+                        <span class="about-tag">AI/ML</span>
+                        <span class="about-tag">Cloud Computing</span>
+                        <span class="about-tag">Photography</span>
+                        <span class="about-tag">Cinematography</span>
+                        <span class="about-tag">Leadership</span>
+                    </div>
+                    <div class="about-info">
+                        <div class="about-info-item">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="details">
+                                <div class="label">Location</div>
+                                <div class="value">Coimbatore, India</div>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="details">
+                                <div class="label">Education</div>
+                                <div class="value">B.E. CSE — SRIT</div>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="details">
+                                <div class="label">Email</div>
+                                <div class="value">alansahai123@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <div class="icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="details">
+                                <div class="label">Focus</div>
+                                <div class="value">AI, Web, Cloud</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary">Let's Connect <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="bg-glow bg-glow--purple" style="top:30%;left:-8%;"></div>
+        <div class="container">
+            <span class="section-label reveal">What I Do</span>
+            <h2 class="section-title reveal">Services & <span class="gradient-text">Expertise</span></h2>
+            <p class="section-subtitle reveal">Delivering end-to-end solutions from concept to deployment — backed by
+                real-world experience and a relentless attention to detail.</p>
+            <div class="services-grid">
+                <div class="service-card reveal stagger-1">
+                    <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Website Development & Upgrades</h3>
+                    <p>Building new websites or upgrading existing ones on your own domain and hosting. From fresh
+                        builds to complete revamps — responsive, performant, and SEO-optimized.</p>
+                    <div class="service-tags">
+                        <span>HTML/CSS/JS</span><span>React</span><span>Next.js</span><span>Upgrades</span>
+                    </div>
+                </div>
+                <div class="service-card reveal stagger-2">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Software Development</h3>
+                    <p>Custom software solutions tailored to business needs. Desktop apps, automation scripts, and
+                        scalable backend systems engineered for reliability.</p>
+                    <div class="service-tags"><span>Python</span><span>Java</span><span>C++</span><span>Firebase</span>
+                    </div>
+                </div>
+                <div class="service-card reveal stagger-3">
+                    <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>IMS Portal Development</h3>
+                    <p>Information management systems that streamline operations — student management, visitor tracking,
+                        and institutional portals with real-time analytics.</p>
+                    <div class="service-tags"><span>Full-Stack</span><span>Firebase</span><span>Dashboards</span></div>
+                </div>
+                <div class="service-card reveal stagger-4">
+                    <div class="service-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3>AI Inspection Systems</h3>
+                    <p>Computer vision-powered quality analysis using YOLO, TensorFlow, and custom detection models.
+                        Trained to ASTM standards with ~90% accuracy for industrial use.</p>
+                    <div class="service-tags"><span>YOLO</span><span>OpenCV</span><span>TensorFlow</span></div>
+                </div>
+                <div class="service-card reveal stagger-5">
+                    <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Web Hosting & Deployment</h3>
+                    <p>End-to-end deployment services including domain setup, SSL, CI/CD pipelines, and cloud hosting on
+                        Vercel, AWS, and custom VPS environments.</p>
+                    <div class="service-tags"><span>Vercel</span><span>AWS</span><span>CI/CD</span><span>DNS</span>
+                    </div>
+                </div>
+                <div class="service-card reveal stagger-6">
+                    <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Photography & Videography</h3>
+                    <p>Through Alan Stills — capturing weddings, events, portraits, and commercial projects with
+                        cinematic quality. 10+ years of creative storytelling.</p>
+                    <div class="service-tags"><span>Weddings</span><span>Events</span><span>Commercial</span></div>
+                </div>
+                <div class="service-card reveal stagger-1">
+                    <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Photo Editing & Retouching</h3>
+                    <p>Professional photo editing, color grading, compositing, and retouching — transforming raw
+                        captures into polished, publication-ready visuals.</p>
+                    <div class="service-tags"><span>Photoshop</span><span>Affinity Photo</span><span>Color
+                            Grading</span><span>Retouching</span></div>
+                </div>
+                <div class="service-card reveal stagger-2">
+                    <div class="service-icon"><i class="fa-solid fa-film"></i></div>
+                    <h3>Video Editing & Motion Graphics</h3>
+                    <p>Cinematic video editing, motion graphics, visual effects, and color correction — from event
+                        highlight reels to polished short films and promotional content.</p>
+                    <div class="service-tags"><span>Premiere Pro</span><span>After Effects</span><span>Motion
+                            Graphics</span><span>VFX</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <span class="section-label reveal">Journey</span>
+            <h2 class="section-title reveal">Experience & <span class="gradient-text">Leadership</span></h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="role">Chairperson — ASME SRIT Student's Section</div>
+                    <div class="org">ASME SRIT</div>
+                    <div class="period">Feb 2026 — Present</div>
+                    <div class="desc">Leading the student section with strategic planning and board administration,
+                        driving engineering innovation initiatives across the campus.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Project Intern</div>
+                    <div class="org">Craftsman Automation</div>
+                    <div class="period">Dec 2025 — Present</div>
+                    <div class="desc">Hands-on industrial experience in manufacturing processes and automation systems
+                        at a leading automotive components manufacturer.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Programming Lead — ASME SRIT</div>
+                    <div class="org">ASME SRIT</div>
+                    <div class="period">Jul 2025 — Feb 2026</div>
+                    <div class="desc">Led programming and technical initiatives for the ASME student section, organizing
+                        events including ASME TNNOVATE SDG Innovation Expo and ASME EFx SRIT 2026.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Web Developer & Market Research Analyst</div>
+                    <div class="org">Glamscrap Technologies Pvt. Ltd</div>
+                    <div class="period">Jun 2025</div>
+                    <div class="desc">Developed the company portfolio website and conducted market research with SEO
+                        optimization strategies during an intensive internship.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Director of Photography, Editor-in-Chief & PRO</div>
+                    <div class="org">TEKACE — SRIT</div>
+                    <div class="period">Mar 2025 — Apr 2025</div>
+                    <div class="desc">Led cinematography for "The Voice of the Visionary" podcast — managing camera
+                        work, lighting, color grading, and post-production for YouTube and Spotify. Also handled public
+                        relations, curating content for LinkedIn and Instagram.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Chairperson — Computer Society of India</div>
+                    <div class="org">CSI — SRIT Chapter</div>
+                    <div class="period">Jan 2025 — Jun 2025</div>
+                    <div class="desc">Board administration and strategic planning for the CSI student chapter,
+                        organizing technical workshops and industry interaction sessions.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Media Relations & Outreach Specialist</div>
+                    <div class="org">The Competitive Programming Club, SRIT</div>
+                    <div class="period">Jul 2024 — Present</div>
+                    <div class="desc">Managing media relations and outreach activities, organizing and promoting events
+                        that encourage collaboration and engagement among members. Developing strategies to expand the
+                        club's presence and impact.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Executive Committee Member</div>
+                    <div class="org">TEKACE — SRIT</div>
+                    <div class="period">Jul 2024 — Apr 2025</div>
+                    <div class="desc">Contributing to event planning and coordination while enhancing the organization's
+                        reach. Applying event management and photography skills to capture moments and drive successful
+                        programs.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Summer Intern</div>
+                    <div class="org">JS Aluminium Private Limited</div>
+                    <div class="period">Jun 2023 — Aug 2023</div>
+                    <div class="desc">Hands-on experience in account management, Tally ERP financial transactions,
+                        inventory management, and invoicing processes in the manufacturing industry.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Lead Photographer</div>
+                    <div class="org">Alan Stills</div>
+                    <div class="period">May 2022 — Aug 2023</div>
+                    <div class="desc">Oversaw and executed high-quality photography projects for weddings, corporate
+                        events, portraits, and commercial shoots. Directed photo shoots, managed a team of
+                        photographers, and ensured highest standards of artistry.</div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="role">Co-Founder</div>
+                    <div class="org">Alan Stills</div>
+                    <div class="period">Feb 2016 — Present · 10+ Years</div>
+                    <div class="desc">Leading a creative photography team specializing in weddings, corporate events,
+                        portraits, and commercial projects. Overseeing creative direction, client relations, and
+                        business operations.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <div class="bg-glow bg-glow--blue" style="top:10%;right:-5%;"></div>
+        <div class="container">
+            <span class="section-label reveal">Portfolio</span>
+            <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="projects-tabs reveal">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="web">Websites</button>
+                <button data-filter="ims">Management Systems</button>
+                <button data-filter="ai">AI & CV</button>
+                <button data-filter="hackathon">Hackathons</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+
+                <div class="project-card show" data-category="web" data-project="1">
+                    <div class="project-card-header"><span class="project-num">01</span>
+                        <div class="project-links"><a href="https://glamscrap.in" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Glamscrap Technologies</h3>
+                        <p>Company portfolio site for Glamscrap Technologies — showcasing their eco-friendly waste
+                            transformation services with modern design and SEO optimization.</p>
+                        <div class="project-tech"><span>HTML/CSS</span><span>JavaScript</span><span>SEO</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="web" data-project="2">
+                    <div class="project-card-header"><span class="project-num">02</span>
+                        <div class="project-links"><a href="https://asmesrit.org" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>ASME SRIT Student Section Website</h3>
+                        <p>Official website for ASME SRIT Student's Section, projecting the section to a global audience
+                            with event highlights, team profiles, and activity showcases.</p>
+                        <div class="project-tech"><span>Web Dev</span><span>Responsive</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="web" data-project="3">
+                    <div class="project-card-header"><span class="project-num">03</span>
+                        <div class="project-links"><a href="https://efx.asmesrit.org" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>ASME EFx Event Site</h3>
+                        <p>Dedicated event site for the ASME Engineering Festivals (EFx) hosted by SRIT — featuring
+                            event details, schedules, and registration workflows.</p>
+                        <div class="project-tech"><span>Event Site</span><span>Registration</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="web" data-project="4">
+                    <div class="project-card-header"><span class="project-num">04</span>
+                        <div class="project-links"><a href="https://tnnovate.asmesrit.org" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>ASME TNNOVATE SDG Innovation Expo</h3>
+                        <p>Event website for the ASME TNNOVATE SDG Innovation Expo — featuring event details,
+                            registration, and information about Sustainable Development Goals initiatives.</p>
+                        <div class="project-tech"><span>Event Site</span><span>Registration</span><span>SDG</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="web" data-project="5">
+                    <div class="project-card-header"><span class="project-num">05</span>
+                        <div class="project-links"><a href="https://neurobeats-autimagic.vercel.app/" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>NeuroBeats — AutiMagic</h3>
+                        <p>Product site for NeuroBeats — AI-powered smart bongos making autism therapy magical,
+                            data-driven, and 85-90% more affordable than traditional methods.</p>
+                        <div class="project-tech"><span>Next.js</span><span>IoT</span><span>AI</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="ims" data-project="6">
+                    <div class="project-card-header"><span class="project-num">06</span>
+                        <div class="project-links"><a href="https://csmsjc.vercel.app" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Catechism Student Management</h3>
+                        <p>Full-fledged student information system for St. Jude's Shrine — managing attendance,
+                            assessments, and comprehensive student records like a complete school application.</p>
+                        <div class="project-tech"><span>Firebase</span><span>Full-Stack</span><span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="ims" data-project="7">
+                    <div class="project-card-header"><span class="project-num">07</span></div>
+                    <div class="project-card-body">
+                        <h3>Early Angel Tracking Portal</h3>
+                        <p>Add-on module for the Catechism IMS — tracking and rewarding students who arrive early to
+                            catechism classes with an automated recognition and awards system.</p>
+                        <div class="project-tech"><span>Firebase</span><span>Full-Stack</span><span>Gamification</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="ims" data-project="8">
+                    <div class="project-card-header"><span class="project-num">08</span></div>
+                    <div class="project-card-body">
+                        <h3>VBS Class Attendance Portal</h3>
+                        <p>Dedicated portal for Vacation Bible School (VBS) attendance tracking — managing class
+                            enrollments, daily attendance records, and session-wise analytics.</p>
+                        <div class="project-tech"><span>Firebase</span><span>Attendance</span><span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="ims" data-project="9">
+                    <div class="project-card-header"><span class="project-num">09</span></div>
+                    <div class="project-card-body">
+                        <h3>SRIT Visitor Management System</h3>
+                        <p>Gatepass application for Sri Ramakrishna Institute of Technology — real-time visitor tracking
+                            and management for institutional security and record-keeping.</p>
+                        <div class="project-tech"><span>Full-Stack</span><span>Real-time</span><span>Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="ai" data-project="10">
+                    <div class="project-card-header"><span class="project-num">10</span></div>
+                    <div class="project-card-body">
+                        <h3>CV Quality Analyser — Industrial</h3>
+                        <p>Computer Vision-based defect detection on automotive parts using YOLO models on X-Ray
+                            imaging. Trained to ASTM standards achieving ~90% accuracy for a major MNC.</p>
+                        <div class="project-tech">
+                            <span>YOLO</span><span>OpenCV</span><span>X-Ray</span><span>ASTM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="ai" data-project="11">
+                    <div class="project-card-header"><span class="project-num">11</span></div>
+                    <div class="project-card-body">
+                        <h3>CVAT Annotator — Offline Tool</h3>
+                        <p>Custom offline image annotation tool built for YOLO training dataset preparation — ensuring
+                            data confidentiality for industrial computer vision projects.</p>
+                        <div class="project-tech"><span>Annotation</span><span>YOLO</span><span>Desktop</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="ai" data-project="12">
+                    <div class="project-card-header"><span class="project-num">12</span>
+                        <div class="project-links"><a href="https://www.youtube.com/watch?v=LJVBYjCMYLc"
+                                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Conversational Image Recognition Bot</h3>
+                        <p>NLP + Computer Vision chatbot using VGG-16 for object recognition with Late Fusion Encoder
+                            for context-aware conversations. Applicable in e-commerce, healthcare, and security.</p>
+                        <div class="project-tech"><span>VGG-16</span><span>NLP</span><span>LSTM</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="hackathon" data-project="13">
+                    <div class="project-card-header"><span class="project-num">13</span></div>
+                    <div class="project-card-body">
+                        <h3>AI Laser QR Marking — Indian Railways</h3>
+                        <p>Smart India Hackathon 2025 — Portable laser QR engraving system with AI defect detection for
+                            railway track fittings. Integrates with Indian Railways' UDM & TMS platforms.</p>
+                        <div class="project-tech"><span>SIH 2025</span><span>OpenCV</span><span>TensorFlow</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="hackathon" data-project="14">
+                    <div class="project-card-header"><span class="project-num">14</span></div>
+                    <div class="project-card-body">
+                        <h3>Waterborne Disease Early Warning</h3>
+                        <p>AI-powered predictive platform using XGBoost and spatial modeling to forecast waterborne
+                            disease outbreaks up to 7 days ahead at ward level. Built at KPRIET Fiestaa Hackathon.</p>
+                        <div class="project-tech"><span>XGBoost</span><span>Streamlit</span><span>GIS</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="hackathon" data-project="15">
+                    <div class="project-card-header"><span class="project-num">15</span></div>
+                    <div class="project-card-body">
+                        <h3>ASCDIT — Survey Analytics Platform</h3>
+                        <p>AI-driven survey data processing built for TANCAM TN-IMPACT 2026. Automated cleaning,
+                            weighting, anomaly detection, and report generation with interactive dashboards.</p>
+                        <div class="project-tech"><span>Python</span><span>Streamlit</span><span>AI/ML</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="hackathon" data-project="16">
+                    <div class="project-card-header"><span class="project-num">16</span>
+                        <div class="project-links"><a href="https://avartech-pocv1.streamlit.app/" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>AI-Powered Invoice Auditor</h3>
+                        <p>IMAP-based bill fetching with OCR extraction and business validation. Full pipeline — clerk
+                            upload, manager verification, bank statement matching, and auditor accounting.</p>
+                        <div class="project-tech"><span>OCR</span><span>IMAP</span><span>Streamlit</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="ai" data-project="17">
+                    <div class="project-card-header"><span class="project-num">17</span></div>
+                    <div class="project-card-body">
+                        <h3>AcoustiScan Pro</h3>
+                        <p>Acoustic wave + thermal imaging system for aluminium die casting defect detection — a
+                            non-X-Ray, in-line inspection method. Currently under active development.</p>
+                        <div class="project-tech"><span>Acoustics</span><span>Thermal</span><span>NDT</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card show" data-category="hackathon" data-project="18">
+                    <div class="project-card-header"><span class="project-num">18</span></div>
+                    <div class="project-card-body">
+                        <h3>NPS Retirement Forecasting — PFRDA</h3>
+                        <p>Built for PFRDA Hackathon 2026. Interactive financial forecasting tool for NPS subscribers
+                            with scenario comparison dashboards and predictive retirement corpus modeling.</p>
+                        <div class="project-tech"><span>FinTech</span><span>Analytics</span><span>Full-Stack</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Patents -->
+    <section class="patents section" id="patents">
+        <div class="container">
+            <span class="section-label reveal">Innovation</span>
+            <h2 class="section-title reveal">Patents & <span class="gradient-text">Research</span></h2>
+            <div class="patents-list">
+                <div class="patent-card reveal" data-patent="1" style="cursor:pointer;">
+                    <div class="patent-id"><i class="fa-solid fa-award"></i> Patent No: 202541072782</div>
+                    <h3>Electroencephalographic Brain-Computer Interface System for Immersive Virtual Reality Navigation
+                        with Six Degrees of Freedom Control for Accessibility-Enhanced Educational Tours</h3>
+                    <div class="patent-date">Filed: July 31, 2025</div>
+                </div>
+                <div class="patent-card reveal" data-patent="2" style="cursor:pointer;">
+                    <div class="patent-id"><i class="fa-solid fa-award"></i> Patent No: 202641XXXXX</div>
+                    <h3>AI-Based Automatic Visual Inspection System for Small Scale MSME Manufacturing</h3>
+                    <div class="patent-date">Filed: 2026</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alan Stills Teaser -->
+    <section class="stills-teaser section" id="stills">
+        <div class="bg-glow bg-glow--warm" style="top:20%;left:10%;"></div>
+        <div class="container">
+            <div class="stills-teaser-inner">
+                <div class="stills-teaser-text reveal-left">
+                    <span class="stills-badge"><i class="fa-solid fa-camera"></i> Photography Brand</span>
+                    <h2>Stories Captured Through <span class="warm">Alan Stills</span></h2>
+                    <p class="section-subtitle">From weddings to corporate events, pre-wedding shoots to short films —
+                        we've been crafting visual stories for over a decade. Every frame is a moment preserved with
+                        artistry.</p>
+                    <a href="alanstills.html" class="btn-warm">Explore Alan Stills <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="stills-teaser-visual reveal-right">
+                    <div class="stills-thumb"><img src="assets/stills-1.jpg" alt="Wedding Photography"
+                            style="width:100%;height:100%;object-fit:cover;"></div>
+                    <div class="stills-thumb"><img src="assets/stills-2.jpg" alt="Short Film"
+                            style="width:100%;height:100%;object-fit:cover;"></div>
+                    <div class="stills-thumb"><img src="assets/stills-3.jpg" alt="Pre-Wedding"
+                            style="width:100%;height:100%;object-fit:cover;"></div>
+                    <div class="stills-thumb"><img src="assets/stills-4.jpg" alt="Event Coverage"
+                            style="width:100%;height:100%;object-fit:cover;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="bg-glow bg-glow--blue" style="bottom:10%;left:-5%;"></div>
+        <div class="container">
+            <span class="section-label reveal">Reach Out</span>
+            <h2 class="section-title reveal">Let's Build <span class="gradient-text">Together</span></h2>
+            <p class="section-subtitle reveal">Got a project in mind? Need a developer, a photographer, or both? I'm
+                always open to conversations that lead to great work.</p>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info">
+                            <h4>Email</h4>
+                            <p><a href="mailto:alansahai123@gmail.com">alansahai123@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919361292544">+91 93612 92544</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info">
+                            <h4>Location</h4>
+                            <p>Coimbatore, Tamil Nadu, India — 641017</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/alansahai" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/alansahai" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/alanstills" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:alansahai123@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contactForm">
+                    <div class="form-group"><label for="name">Your Name</label><input type="text" id="name"
+                            placeholder="John Doe" required></div>
+                    <div class="form-group"><label for="email">Your Email</label><input type="email" id="email"
+                            placeholder="john@example.com" required></div>
+                    <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject"
+                            placeholder="Project Inquiry"></div>
+                    <div class="form-group"><label for="message">Message</label><textarea id="message"
+                            placeholder="Tell me about your project..." required></textarea></div>
+                    <button type="submit" class="btn-primary">Send Message <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal-overlay" id="projectModal">
+        <div class="project-modal">
+            <div class="project-modal-close"><button id="modalClose"><i class="fa-solid fa-xmark"></i></button></div>
+            <div class="project-modal-image"><img id="modalImage" src="" alt="Project"></div>
+            <div class="project-modal-content">
+                <div class="project-modal-num" id="modalNum"></div>
+                <h2 id="modalTitle"></h2>
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="project-modal-tech" id="modalTech"></div>
+                <a class="project-modal-link" id="modalLink" href="#" target="_blank" style="display:none;"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i> <span>Visit Project</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Patent Modal -->
+    <div class="project-modal-overlay" id="patentModal">
+        <div class="project-modal">
+            <div class="project-modal-close"><button id="patentModalClose"><i class="fa-solid fa-xmark"></i></button></div>
+            <div class="project-modal-image"><img id="patentModalImage" src="" alt="Patent"></div>
+            <div class="project-modal-content" style="padding-top:8px;">
+                <div class="project-modal-num" id="patentModalNum"></div>
+                <h2 id="patentModalTitle"></h2>
+                <div class="project-modal-tech" id="patentModalTech"></div>
+                <p class="modal-desc" id="patentModalDesc"></p>
+                <div style="margin-top:16px;padding:16px;border-radius:var(--radius-md);background:var(--bg-glass);border:1px solid var(--border-glass);">
+                    <div style="font-family:var(--font-tag);font-size:0.65rem;color:var(--accent-1);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;">Applicants</div>
+                    <p class="modal-desc" id="patentModalApplicants" style="margin-bottom:0;font-size:0.8rem;line-height:1.8;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Alan S. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="alanstills.html">Alan Stills</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

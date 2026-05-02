@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Stills — Photography & Videography</title>
+  <meta name="description"
+    content="Alan Stills — Bespoke photography and videography services. Weddings, events, commercial shoots, short films, and more.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar-hero.css">
+  <link rel="stylesheet" href="css/sections-1.css">
+  <link rel="stylesheet" href="css/sections-2.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    /* Alan Stills specific overrides */
+    :root {
+      --accent-1: #f59e0b;
+      --accent-2: #f97316;
+      --accent-3: #fbbf24;
+      --accent-glow: rgba(245, 158, 11, 0.15);
+    }
+
+    .stills-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+
+    .stills-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .stills-hero-badge {
+      font-family: var(--font-tag);
+      font-size: 0.7rem;
+      padding: 8px 18px;
+      border-radius: var(--radius-xl);
+      background: rgba(245, 158, 11, 0.1);
+      color: var(--accent-warm);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      display: inline-block;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .stills-hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .stills-hero-title .warm-gradient {
+      background: linear-gradient(135deg, #f59e0b, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stills-hero-sub {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .stills-hero-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      line-height: 1.8;
+      margin-bottom: 36px;
+    }
+
+    .stills-about {
+      background: var(--bg-secondary);
+    }
+
+    .stills-about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .stills-about-text .founder-tag {
+      font-family: var(--font-tag);
+      font-size: 0.7rem;
+      color: var(--accent-warm);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+
+    .stills-about-img {
+      aspect-ratio: 4/5;
+      border-radius: var(--radius-lg);
+      background: rgba(245, 158, 11, 0.05);
+      border: 1px solid rgba(245, 158, 11, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stills-about-img .icon-placeholder {
+      font-size: 4rem;
+      opacity: 0.2;
+    }
+
+    .stills-services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .stills-service {
+      padding: 32px 24px;
+      border-radius: var(--radius-lg);
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glass);
+      text-align: center;
+      transition: all var(--transition-mid);
+    }
+
+    .stills-service:hover {
+      transform: translateY(-6px);
+      border-color: rgba(245, 158, 11, 0.2);
+      box-shadow: 0 0 30px rgba(245, 158, 11, 0.08);
+    }
+
+    .stills-service .s-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .stills-service h3 {
+      font-family: var(--font-subheading);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .stills-service p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .stills-gallery {
+      background: var(--bg-secondary);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 48px;
+    }
+
+    .gallery-item {
+      aspect-ratio: 1;
+      border-radius: var(--radius-md);
+      background: rgba(245, 158, 11, 0.04);
+      border: 1px solid rgba(245, 158, 11, 0.08);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: transform var(--transition-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item:nth-child(1) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .gallery-item .g-icon {
+      font-size: 2rem;
+      opacity: 0.15;
+    }
+
+    .gallery-item .g-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      opacity: 0;
+      transition: opacity var(--transition-mid);
+      display: flex;
+      align-items: flex-end;
+      padding: 16px;
+    }
+
+    .gallery-item:hover .g-overlay {
+      opacity: 1;
+    }
+
+    .gallery-item .g-overlay span {
+      font-family: var(--font-tag);
+      font-size: 0.75rem;
+      color: #fff;
+    }
+
+    .stills-cta {
+      text-align: center;
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .stills-cta h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 16px;
+    }
+
+    .stills-cta p {
+      max-width: 500px;
+      margin: 0 auto 32px;
+    }
+
+    .btn-warm-lg {
+      font-family: var(--font-tag);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, #f59e0b, #f97316);
+      color: var(--bg-primary);
+      border-radius: var(--radius-xl);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all var(--transition-fast);
+    }
+
+    .btn-warm-lg:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 40px rgba(245, 158, 11, 0.25);
+      color: var(--bg-primary);
+    }
+
+    @media (max-width: 768px) {
+      .stills-about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stills-services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-item:nth-child(1) {
+        grid-column: span 2;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="Alan S"></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="nav-cta" style="background:linear-gradient(135deg,#f59e0b,#f97316)">Book Now</a>
+      <div class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="stills-hero">
+    <div class="bg-glow bg-glow--warm" style="top:-10%;left:-5%;"></div>
+    <div class="bg-glow bg-glow--warm" style="bottom:10%;right:5%;opacity:0.08;"></div>
+    <div class="container">
+      <div class="stills-hero-content reveal">
+        <span class="stills-hero-badge"><i class="fa-solid fa-camera"></i> Est. 2016</span>
+        <h1 class="stills-hero-title">We Capture <span class="warm-gradient">Moments</span> That Last Forever</h1>
+        <p class="stills-hero-sub">Bespoke Photography & Videography — Coimbatore</p>
+        <p class="stills-hero-desc">For over a decade, Alan Stills has been crafting visual stories with care,
+          creativity, and a cinematic eye. From intimate pre-wedding shoots to grand celebrations — every frame is a
+          moment preserved.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-warm-lg">Book a Session <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#gallery" class="btn-outline">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="stills-about section" id="about">
+    <div class="container">
+      <div class="stills-about-grid">
+        <div class="reveal-left">
+          <div class="stills-about-img"><img src="assets/stills-about.jpg" alt="Alan Stills Team"
+              style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);"></div>
+        </div>
+        <div class="stills-about-text reveal-right">
+          <span class="founder-tag">The Story</span>
+          <h2 class="section-title" style="color:var(--text-primary)">A Decade of <span
+              style="background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Visual
+              Storytelling</span></h2>
+          <p class="bio">As the Co-Founder of Alan Stills, I lead a dedicated team of creative professionals. We
+            specialize in delivering high-quality photography and videography services for weddings, corporate events,
+            portraits, and commercial projects. Every project is executed with precision and artistry — we pride
+            ourselves on capturing the essence of life's most significant moments with a blend of care, creativity, and
+            professionalism.</p>
+          <div class="about-tags" style="margin-top:24px">
+            <span class="about-tag" style="border-color:rgba(245,158,11,0.2);color:#fbbf24">10+ Years</span>
+            <span class="about-tag" style="border-color:rgba(245,158,11,0.2);color:#fbbf24">Coimbatore</span>
+            <span class="about-tag" style="border-color:rgba(245,158,11,0.2);color:#fbbf24">Photo & Video</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <span class="section-label reveal" style="color:#f59e0b"><span style="background:#f59e0b" class="line"></span>Our
+        Services</span>
+      <h2 class="section-title reveal">What We <span
+          style="background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Offer</span>
+      </h2>
+      <div class="stills-services-grid">
+        <div class="stills-service reveal stagger-1">
+          <div class="s-icon">💍</div>
+          <h3>Wedding Photography</h3>
+          <p>Capturing every emotion, ritual, and celebration with cinematic storytelling.</p>
+        </div>
+        <div class="stills-service reveal stagger-2">
+          <div class="s-icon">💑</div>
+          <h3>Pre & Post Wedding</h3>
+          <p>Creative couple shoots — outdoor, thematic, and cinematic styles.</p>
+        </div>
+        <div class="stills-service reveal stagger-3">
+          <div class="s-icon">🎂</div>
+          <h3>Birthday Shoots</h3>
+          <p>Fun, vibrant birthday coverage — kids, milestones, and themed parties.</p>
+        </div>
+        <div class="stills-service reveal stagger-4">
+          <div class="s-icon">🎤</div>
+          <h3>Event Coverage</h3>
+          <p>Corporate events, college fests, conferences — full photo and video coverage.</p>
+        </div>
+        <div class="stills-service reveal stagger-5">
+          <div class="s-icon">📢</div>
+          <h3>Ad Shoots & PR</h3>
+          <p>Professional advertising shoots, brand content, and PR material production.</p>
+        </div>
+        <div class="stills-service reveal stagger-6">
+          <div class="s-icon">🎬</div>
+          <h3>Short Films & Podcasts</h3>
+          <p>Cinematic short films, portfolio videos, and full podcast shoot production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="stills-gallery section" id="gallery">
+    <div class="container">
+      <span class="section-label reveal" style="color:#f59e0b">Portfolio</span>
+      <h2 class="section-title reveal">Our <span
+          style="background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Work</span>
+      </h2>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-scale stagger-1"><img src="assets/gallery-1.jpg" alt="Wedding Ceremony"
+            style="width:100%;height:100%;object-fit:cover;">
+          <div class="g-overlay"><span>Wedding Ceremony</span></div>
+        </div>
+        <div class="gallery-item reveal-scale stagger-2"><img src="assets/gallery-2.jpg" alt="Pre-Wedding"
+            style="width:100%;height:100%;object-fit:cover;">
+          <div class="g-overlay"><span>Pre-Wedding</span></div>
+        </div>
+        <div class="gallery-item reveal-scale stagger-3"><img src="assets/gallery-3.jpg" alt="Short Film"
+            style="width:100%;height:100%;object-fit:cover;">
+          <div class="g-overlay"><span>Short Film</span></div>
+        </div>
+        <div class="gallery-item reveal-scale stagger-4"><img src="assets/gallery-4.jpg" alt="Corporate Event"
+            style="width:100%;height:100%;object-fit:cover;">
+          <div class="g-overlay"><span>Corporate Event</span></div>
+        </div>
+        <div class="gallery-item reveal-scale stagger-5"><img src="assets/gallery-5.jpg" alt="Birthday Shoot"
+            style="width:100%;height:100%;object-fit:cover;">
+          <div class="g-overlay"><span>Birthday Shoot</span></div>
+        </div>
+        <div class="gallery-item reveal-scale stagger-1"><img src="assets/gallery-6.jpg" alt="Ad Campaign"
+            style="width:100%;height:100%;object-fit:cover;">
+          <div class="g-overlay"><span>Ad Campaign</span></div>
+        </div>
+        <div class="gallery-item reveal-scale stagger-2"><img src="assets/gallery-7.jpg" alt="Podcast Studio"
+            style="width:100%;height:100%;object-fit:cover;">
+          <div class="g-overlay"><span>Podcast Studio</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section class="stills-cta section" id="contact">
+    <div class="bg-glow bg-glow--warm" style="top:30%;left:30%;width:500px;height:500px;"></div>
+    <div class="container">
+      <span class="section-label reveal" style="color:#f59e0b;justify-content:center">Get In Touch</span>
+      <h2 class="reveal" style="color:var(--text-primary)">Let's Create Something <span
+          style="background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Beautiful</span>
+      </h2>
+      <p class="section-subtitle reveal" style="margin:0 auto 12px;text-align:center">Ready to book? Have questions?
+        Let's talk about your next shoot.</p>
+      <p class="reveal" style="margin-bottom:32px;text-align:center"><a href="mailto:alansahai123@gmail.com"
+          style="color:#f59e0b">alansahai123@gmail.com</a> &nbsp;|&nbsp; <a href="tel:+919361292544"
+          style="color:#f59e0b">+91 93612 92544</a></p>
+      <div class="reveal"><a href="mailto:alansahai123@gmail.com" class="btn-warm-lg">Book Now <i
+            class="fa-solid fa-arrow-right"></i></a></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Alan Stills. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Developer Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
