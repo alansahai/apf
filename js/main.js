@@ -319,8 +319,16 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modalNum').textContent = data.num;
         document.getElementById('modalTitle').textContent = data.title;
         document.getElementById('modalDesc').textContent = data.desc;
-        document.getElementById('modalImage').src = data.image;
-        document.getElementById('modalImage').alt = data.title;
+        const modalImgEl = document.getElementById('modalImage');
+        const modalImgWrap = modalImgEl.closest('.project-modal-image');
+        modalImgEl.src = data.image;
+        modalImgEl.alt = data.title;
+        modalImgEl.style.display = '';
+        if (modalImgWrap) modalImgWrap.style.display = '';
+        modalImgEl.onerror = function () {
+          this.style.display = 'none';
+          if (modalImgWrap) modalImgWrap.style.display = 'none';
+        };
         // Tech tags
         const techEl = document.getElementById('modalTech');
         techEl.innerHTML = data.tech.map(t => `<span>${t}</span>`).join('');
@@ -371,8 +379,16 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('patentModalNum').textContent = data.num;
         document.getElementById('patentModalTitle').textContent = data.title;
         document.getElementById('patentModalDesc').textContent = data.desc;
-        document.getElementById('patentModalImage').src = data.image;
-        document.getElementById('patentModalImage').alt = data.title;
+        const patentImgEl = document.getElementById('patentModalImage');
+        const patentImgWrap = patentImgEl.closest('.project-modal-image');
+        patentImgEl.src = data.image;
+        patentImgEl.alt = data.title;
+        patentImgEl.style.display = '';
+        if (patentImgWrap) patentImgWrap.style.display = '';
+        patentImgEl.onerror = function () {
+          this.style.display = 'none';
+          if (patentImgWrap) patentImgWrap.style.display = 'none';
+        };
         document.getElementById('patentModalApplicants').textContent = data.applicants;
         const techEl = document.getElementById('patentModalTech');
         techEl.innerHTML = data.tech.map(t => `<span>${t}</span>`).join('');
