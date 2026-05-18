@@ -1,4 +1,3 @@
-/* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .projects-grid { grid-template-columns: 1fr; }
@@ -12,6 +11,8 @@
   .nav-cta { display: none; }
   .hero { padding-top: 100px; }
   .hero-visual { display: none; }
+  .hero-scroll { display: none; }
+  .hero-name { letter-spacing: -1px; }
   .hero-stats { gap: 24px; }
   .hero-stat-num { font-size: 1.6rem; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
